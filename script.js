@@ -3,7 +3,7 @@ $(document).ready(function () {
 const menu = document.querySelector('.menu-btn');
 const sidebar = document.querySelector('.sidebar');
 
-menu.addEventListener('click', ()=>{
+menu.addEventListener('click', function(){
 sidebar.classList.toggle('active');
 if(window.innerWidth<=768){
     sidebar.classList.remove('active');
