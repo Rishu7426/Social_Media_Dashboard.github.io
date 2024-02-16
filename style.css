@@ -57,11 +57,12 @@ body{
     border-radius: 20px;
 }
 
-.search input{
+.search input{ 
     width: 90%;
     margin-left: 10px;
     border: none;
     background-color: transparent;
+    color: white;
 }
 
 .notification{
@@ -178,6 +179,8 @@ body{
     gap: 2rem;
 }
 .right-container{
+    position: relative;
+    float: right;
     flex: 0.4 ;
     gap: 2rem;
 }
@@ -372,6 +375,10 @@ body{
 }
 
 /* Menu click */
+.sidebar.active{
+    width: 220px;
+}
+
 .sidebar.active .profile-image{
     width: 120px;
     height: 120px;
@@ -379,7 +386,6 @@ body{
 .sidebar.active .profile p, .sidebar.active .menu-detail a span{
     display: block;
 }
-
 .sidebar.active ~ .main-container{
     left: 240px;
     width: calc(100% - 240px);
@@ -391,6 +397,7 @@ body{
 
 /* mobile screen */
 @media screen and (max-width:680px){
+
     .sidebar{
         flex-direction: row;
         z-index: 100;
